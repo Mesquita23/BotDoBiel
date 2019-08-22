@@ -1,10 +1,10 @@
 {
 
-    "name": "Bot_do_Biel",
+    "name": "example",
   
-    "description": "Oi eu sou o Biel",
+    "description": "example",
   
-    "version": "0.0.1",
+    "version": "0.0.0",
   
     "main": "bot.js",
   
