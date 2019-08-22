@@ -1,13 +1,25 @@
 {
-  "dependencies": {
-    "dotenv": "^8.0.0",
-    "git": "^0.1.5"
-  },
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.1"
+
+    "name": "Bot_do_Biel",
+  
+    "description": "Oi eu sou o Biel",
+  
+    "version": "0.0.1",
+  
+    "main": "bot.js",
+  
+    "scripts": {
+  
+      "start": "node bot.js"
+  
+    },
+  
+    "dependencies": {
+  
+      "discord.js": "11.1.0",
+  
+      "request": "2.81.0"
+  
+    }
+  
   }
-}
