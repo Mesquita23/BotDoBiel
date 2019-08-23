@@ -40,6 +40,11 @@ client.on('message', message => {
        message.reply('Puck');
 
        }
+ if (message.content === 'help') {
+
+       message.reply('help é teu cu');
+
+       }
 
 });
 
