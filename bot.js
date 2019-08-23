@@ -19,6 +19,27 @@ client.on('message', message => {
        message.reply('pong');
 
        }
+ 
+  if (message.content === 'Paulo') {
+
+       message.reply('Chupador do CR7');
+
+       }
+  if (message.content === 'Thomaz') {
+
+       message.reply('Ola Marilei, a noite tá inha, vinho e muito sexo!');
+
+       }
+  if (message.content === 'Lucas') {
+
+       message.reply('Lendas 2 fio, respeita');
+
+       }
+ if (message.content === 'Wagner') {
+
+       message.reply('Puck');
+
+       }
 
 });
 
