@@ -27,7 +27,7 @@ client.on('message', message => {
        }
   if (message.content === 'Thomaz') {
 
-       message.reply('Ola Marilei, a noite tá inha, vinho e muito sexo!');
+       message.reply('Ola Marilene, a noite tá inha, vinho e muito sexo!');
 
        }
   if (message.content === 'Lucas') {
