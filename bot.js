@@ -51,6 +51,11 @@ client.on('message', message => {
        message.reply( absolute_path);
        
        }
+ if (message.content === 'Marilene') {
+
+  const dispatcher = connection.playFile('/app/Marilene.mp3');
+ 
+      }
 
        
 
