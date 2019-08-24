@@ -53,15 +53,15 @@ client.on('message', message => {
        
        }
 
- //if (message.content === 'Marilene') {
- // dispatcher.setVolume(1);
+ if (message.content === 'Marilene') {
+  dispatcher.setVolume(1);
   //connection.playOpusStream(await ytdl('https://www.youtube.com/watch?v=4b3m5sMXmhI'));
 
- // connection.playArbitraryInput('https://www.youtube.com/watch?v=4b3m5sMXmhI');
+  connection.playArbitraryInput('https://www.youtube.com/watch?v=4b3m5sMXmhI');
 
 //  const dispatcher = connection.playFile('/app/Marilene.mp3');
  
-     // }
+     }
 
        
 
