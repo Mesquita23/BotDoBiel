@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const ytdl = require('ytdl-core');
 
 const client = new Discord.Client();
 
@@ -52,8 +53,10 @@ client.on('message', message => {
        
        }
  if (message.content === 'Marilene') {
+  dispatcher.setVolume(1);
+  connection.playOpusStream(await ytdl('https://www.youtube.com/watch?v=4b3m5sMXmhI'));
 
-  connection.playArbitraryInput('https://www.youtube.com/watch?v=4b3m5sMXmhI');
+ // connection.playArbitraryInput('https://www.youtube.com/watch?v=4b3m5sMXmhI');
 
 //  const dispatcher = connection.playFile('/app/Marilene.mp3');
  
