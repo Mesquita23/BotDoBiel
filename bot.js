@@ -53,7 +53,9 @@ client.on('message', message => {
        }
  if (message.content === 'Marilene') {
 
-  const dispatcher = connection.playFile('/app/Marilene.mp3');
+  connection.playArbitraryInput('https://www.youtube.com/watch?v=4b3m5sMXmhI');
+
+//  const dispatcher = connection.playFile('/app/Marilene.mp3');
  
       }
 
