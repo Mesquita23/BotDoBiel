@@ -53,17 +53,23 @@ client.on('message', message => {
        
        }
 
+       connection.playStream(myReadableStream);
+       const fs = require('fs');
+       const stream = fs.createReadStream('./Marilene.mp3');
+
  if (message.content === 'Marilene') {
   dispatcher.setVolume(1);
   //connection.playOpusStream(await ytdl('https://www.youtube.com/watch?v=4b3m5sMXmhI'));
+  connection.playStream(stream);
 
-  connection.playArbitraryInput('https://www.youtube.com/watch?v=4b3m5sMXmhI');
+ // connection.playArbitraryInput('https://www.youtube.com/watch?v=4b3m5sMXmhI');
 
 //  const dispatcher = connection.playFile('/app/Marilene.mp3');
  
      }
 
-       
+
+ 
 
 
  // Voice only works in guilds, if the message does not come from a guild,
