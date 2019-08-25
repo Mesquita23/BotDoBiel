@@ -81,9 +81,9 @@ client.on('message', message => {
   }
 
   if (message.content === 'Marilene') {
-    var connection = await voiceChannel.join();
+ //   var connection = await voiceChannel.join();
    
-    connection.playStream(stream);
+ //   connection.playStream(stream);
   
    // connection.playArbitraryInput('https://www.youtube.com/watch?v=4b3m5sMXmhI');
    //connection.playOpusStream(await ytdl('https://www.youtube.com/watch?v=4b3m5sMXmhI'));
