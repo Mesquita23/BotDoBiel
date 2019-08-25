@@ -53,7 +53,7 @@ client.on('message', message => {
        
        }
 
-       connection.playStream(myReadableStream);
+       
        const fs = require('fs');
        const stream = fs.createReadStream('./Marilene.mp3');
 
