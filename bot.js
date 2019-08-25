@@ -71,8 +71,7 @@ client.on('message', message => {
     // Only try to join the sender's voice channel if they are in one themselves
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
-        .then(connection => {
-          connection.playStream(stream); // Connection is an instance of VoiceConnection
+        .then(connection => {        // Connection is an instance of VoiceConnection
           message.reply('Aéé rapaziada, cheguei com os refri!');
         })
         .catch(console.log);
@@ -82,11 +81,12 @@ client.on('message', message => {
   }
 
   if (message.content === 'Marilene') {
-    //connection.playOpusStream(await ytdl('https://www.youtube.com/watch?v=4b3m5sMXmhI'));
+    var connection = await voiceChannel.join();
+   
     connection.playStream(stream);
   
    // connection.playArbitraryInput('https://www.youtube.com/watch?v=4b3m5sMXmhI');
-  
+   //connection.playOpusStream(await ytdl('https://www.youtube.com/watch?v=4b3m5sMXmhI'));
   //  const dispatcher = connection.playFile('/app/Marilene.mp3');
    
        }
