@@ -58,7 +58,6 @@ client.on('message', message => {
        const stream = fs.createReadStream('./Marilene.mp3');
 
  if (message.content === 'Marilene') {
-  dispatcher.setVolume(1);
   //connection.playOpusStream(await ytdl('https://www.youtube.com/watch?v=4b3m5sMXmhI'));
   connection.playStream(stream);
 
