@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 //const ytdl = require('ytdl-core');
+const fs = require('fs');
+const stream = fs.createReadStream('./Marilene.mp3');
 
 const client = new Discord.Client();
 
@@ -54,22 +56,12 @@ client.on('message', message => {
        }
 
        
-       const fs = require('fs');
-       const stream = fs.createReadStream('./Marilene.mp3');
 
- if (message.content === 'Marilene') {
-  //connection.playOpusStream(await ytdl('https://www.youtube.com/watch?v=4b3m5sMXmhI'));
-  connection.playStream(stream);
 
- // connection.playArbitraryInput('https://www.youtube.com/watch?v=4b3m5sMXmhI');
 
-//  const dispatcher = connection.playFile('/app/Marilene.mp3');
- 
-     }
 
 
  
-
 
  // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
@@ -79,7 +71,8 @@ client.on('message', message => {
     // Only try to join the sender's voice channel if they are in one themselves
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
-        .then(connection => { // Connection is an instance of VoiceConnection
+        .then(connection => {
+          connection.playStream(stream); // Connection is an instance of VoiceConnection
           message.reply('Aéé rapaziada, cheguei com os refri!');
         })
         .catch(console.log);
@@ -87,6 +80,17 @@ client.on('message', message => {
       message.reply('Ó animal de teta, tu precisa entrar em um canal primeiro!!');
     }
   }
+
+  if (message.content === 'Marilene') {
+    //connection.playOpusStream(await ytdl('https://www.youtube.com/watch?v=4b3m5sMXmhI'));
+    connection.playStream(stream);
+  
+   // connection.playArbitraryInput('https://www.youtube.com/watch?v=4b3m5sMXmhI');
+  
+  //  const dispatcher = connection.playFile('/app/Marilene.mp3');
+   
+       }
+
 
 });
 
